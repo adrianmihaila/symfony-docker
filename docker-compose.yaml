@@ -9,7 +9,6 @@ services:
       - 80:80
 
   php-fpm:
-    user: "${DOCKER_USER_ID}:${DOCKER_GROUP_ID}"
     build:
       context: .
       dockerfile: ./docker/php-fpm/Dockerfile
